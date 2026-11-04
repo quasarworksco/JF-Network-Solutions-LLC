@@ -1,6 +1,6 @@
 # JF Network Solutions LLC — Landing page
 
-Static bilingual (ES/EN) site, served by GitHub Pages at `jfnetworksolutions.dgp-link.com` (see `CNAME`).
+Static bilingual (ES/EN) site, served by GitHub Pages at `jfnetworksolutions.com` (see `CNAME`).
 
 - `index.html` — page markup (Spanish by default)
 - `assets/js/i18n.js` — all Spanish/English text
