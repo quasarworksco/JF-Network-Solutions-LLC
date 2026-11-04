@@ -1,0 +1,599 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Entrega: sitio web, correo y marca · JF Network Solutions | DGP Global Group</title>
+  <meta name="description" content="Entrega de JF Network Solutions LLC: sitio web bilingüe, dominio, correo corporativo, perfil de Google Business, logo vectorizado, 3 flyers, tarjeta de presentación y kit de marca.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#03060c">
+  <link rel="canonical" href="https://jfnetworksolutions.com/entrega/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_US">
+  <meta property="og:site_name" content="JF Network Solutions LLC">
+  <meta property="og:title" content="Entrega: tu sitio web y tu marca · JF Network Solutions">
+  <meta property="og:description" content="Tu sitio web, tu correo corporativo, tus flyers y tu tarjeta de presentación están listos.">
+  <meta property="og:url" content="https://jfnetworksolutions.com/entrega/">
+  <meta property="og:image" content="https://jfnetworksolutions.com/assets/img/og-image.jpg">
+  <meta property="og:image:secure_url" content="https://jfnetworksolutions.com/assets/img/og-image.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Logo de JF Network Solutions LLC">
+
+  <!-- Twitter / X Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Entrega: tu sitio web y tu marca · JF Network Solutions">
+  <meta name="twitter:description" content="Tu sitio web, tu correo corporativo, tus flyers y tu tarjeta de presentación están listos.">
+  <meta name="twitter:image" content="https://jfnetworksolutions.com/assets/img/og-image.jpg">
+  <meta name="twitter:image:alt" content="Logo de JF Network Solutions LLC">
+
+  <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,600;0,700;0,800;1,700;1,800;1,900&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <style>
+    /* ---------- delivery page ---------- */
+    .nav { background: rgba(3,6,12,.92); border-bottom: 1px solid var(--line); }
+    .nav__tag { font: 600 .72rem/1 var(--font-body); letter-spacing: .16em; text-transform: uppercase; color: var(--muted); }
+
+    .d-hero { position: relative; padding: calc(var(--nav-h) + 80px) 0 90px; overflow: hidden; }
+    .d-hero::after { content: ""; position: absolute; inset: 0; pointer-events: none; background-image: linear-gradient(var(--line) 1px, transparent 1px), linear-gradient(90deg, var(--line) 1px, transparent 1px); background-size: 64px 64px; mask-image: radial-gradient(ellipse at 70% 30%, #000, transparent 70%); -webkit-mask-image: radial-gradient(ellipse at 70% 30%, #000, transparent 70%); opacity: .3; }
+    .d-hero__grid { position: relative; z-index: 1; display: grid; grid-template-columns: 1.2fr .8fr; gap: 50px; align-items: end; }
+    .d-hero h1 { margin-top: 20px; font-weight: 800; font-style: italic; font-size: clamp(2.4rem, 5vw, 4rem); text-wrap: balance; }
+    .d-hero h1 .soft { color: var(--muted); }
+    .d-hero .lead { margin-top: 20px; max-width: 600px; font-size: 1.1rem; color: var(--muted); }
+    .d-hero .lead strong { color: var(--text); font-weight: 600; }
+    .d-ref { margin-top: 26px; display: inline-flex; gap: 10px; align-items: center; font: 500 .78rem/1 var(--font-mono); color: var(--dim); letter-spacing: .06em; }
+
+    .progress { padding: 26px; border: 1px solid var(--line); border-radius: 18px; background: var(--bg-2); }
+    .progress__top { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
+    .progress__top strong { font: 800 italic 1.3rem/1 var(--font-display); }
+    .progress__top span { font: 700 1.6rem/1 var(--font-display); color: var(--blue-2); }
+    .progress__bar { margin-top: 16px; height: 6px; border-radius: 6px; background: var(--line); overflow: hidden; }
+    .progress__bar i { display: block; height: 100%; width: 0; background: var(--blue); border-radius: 6px; transition: width 1.6s var(--ease) .3s; }
+    .progress.is-in .progress__bar i { width: 100%; }
+    .progress small { display: block; margin-top: 12px; color: var(--muted); font-size: .86rem; }
+    .progress ul { margin-top: 18px; display: flex; flex-wrap: wrap; gap: 6px; }
+    .progress li { padding: 5px 10px; border: 1px solid var(--line); border-radius: 999px; font-size: .74rem; color: var(--muted); display: inline-flex; align-items: center; gap: 6px; }
+    .progress li::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: #39e58c; }
+
+    /* credentials */
+    .cred { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: start; }
+    .cred__card { padding: 30px; border-radius: 20px; border: 1px solid var(--line-strong); background: var(--bg-2); }
+    .cred__head { display: flex; align-items: center; gap: 14px; padding-bottom: 20px; border-bottom: 1px solid var(--line); }
+    .cred__head .ic { width: 46px; height: 46px; border-radius: 12px; border: 1px solid var(--line); display: grid; place-items: center; color: var(--blue-2); }
+    .cred__head .ic svg { width: 22px; height: 22px; }
+    .cred__head b { display: block; font: 700 1.15rem/1.2 var(--font-display); }
+    .cred__head small { color: var(--muted); font-size: .84rem; }
+    .cred__status { margin-left: auto; display: inline-flex; align-items: center; gap: 7px; padding: 6px 12px; border-radius: 999px; border: 1px solid rgba(57,229,140,.35); color: #7ef0b0; font: 600 .72rem/1 var(--font-body); letter-spacing: .08em; text-transform: uppercase; }
+    .cred__status::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: #39e58c; }
+    .cred__row { margin-top: 20px; }
+    .cred__row label { display: block; font: 600 .72rem/1 var(--font-body); letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
+    .cred__field { margin-top: 10px; display: flex; align-items: center; gap: 10px; padding: 14px 14px 14px 18px; border-radius: 12px; border: 1px solid var(--line-strong); background: var(--bg); }
+    .cred__field code { flex: 1; min-width: 0; overflow-wrap: anywhere; font: 500 1rem/1.4 var(--font-mono); color: #fff; }
+    .cred__field--note { align-items: flex-start; }
+    .cred__field--note p { flex: 1; font-size: .95rem; color: var(--text); }
+    .cred__field--note svg { width: 20px; height: 20px; flex: none; color: var(--blue-2); margin-top: 2px; }
+    .copy { flex: none; border: 1px solid var(--line-strong); background: none; border-radius: 9px; padding: 8px 12px; font: 600 .8rem/1 var(--font-body); color: var(--text); transition: border-color .25s, color .25s; }
+    .copy:hover { border-color: var(--blue-2); }
+    .copy.is-done { border-color: #39e58c; color: #7ef0b0; }
+    .tips { margin-top: 30px; display: grid; gap: 16px; }
+    .tips li { display: grid; grid-template-columns: 28px 1fr; gap: 14px; color: var(--muted); }
+    .tips b { color: var(--text); font-weight: 600; }
+
+    /* google business */
+    .gbp-status { margin-top: 22px; display: inline-flex; align-items: center; gap: 10px; padding: 8px 14px; border-radius: 999px; border: 1px solid rgba(255,182,72,.4); color: #ffcf85; font: 600 .78rem/1 var(--font-body); letter-spacing: .06em; }
+    .dot-wait { width: 8px; height: 8px; border-radius: 50%; background: #ffb648; animation: blink 1.6s infinite; }
+    .gsteps { display: grid; gap: 14px; list-style: none; }
+    .gsteps > li { display: grid; grid-template-columns: 44px 1fr; gap: 16px; padding: 20px; border: 1px solid var(--line); border-radius: 16px; background: var(--bg-2); }
+    .gsteps__n { width: 44px; height: 44px; border-radius: 50%; display: grid; place-items: center; background: var(--blue); color: #fff; font: 800 italic 1.1rem/1 var(--font-display); }
+    .gsteps b { font-weight: 600; }
+    .gsteps > li > div > b { display: block; font: 700 1.08rem/1.3 var(--font-display); }
+    .gsteps p { margin-top: 6px; color: var(--muted); font-size: .93rem; }
+    .gsteps a { color: var(--blue-2); text-decoration: underline; text-underline-offset: 3px; }
+    .gsteps__list { margin-top: 10px; display: grid; gap: 8px; }
+    .gsteps__list li { position: relative; padding-left: 16px; color: var(--muted); font-size: .92rem; }
+    .gsteps__list li::before { content: ""; position: absolute; left: 0; top: .6em; width: 6px; height: 6px; border-radius: 50%; background: var(--blue-2); }
+    .gsteps__list b { color: var(--text); }
+    .deliv__item--wide { grid-column: 1 / -1; }
+
+    /* deliverables */
+    .deliv { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .deliv__item { position: relative; padding: 26px 24px; border: 1px solid var(--line); border-radius: var(--radius); transition: border-color .3s, transform .4s var(--ease); }
+    .deliv__item:hover { border-color: var(--line-strong); transform: translateY(-3px); }
+    .deliv__num { font: 800 italic .95rem/1 var(--font-display); color: var(--blue-2); }
+    .deliv__item h3 { margin-top: 14px; font-size: 1.15rem; font-weight: 700; }
+    .deliv__item p { margin-top: 8px; font-size: .92rem; color: var(--muted); }
+    .deliv__item .done { position: absolute; top: 22px; right: 22px; width: 22px; height: 22px; border-radius: 50%; background: var(--blue); }
+    .deliv__item .done::after { content: ""; position: absolute; left: 8px; top: 5px; width: 5px; height: 10px; border: solid #fff; border-width: 0 2px 2px 0; transform: rotate(45deg); }
+
+    /* downloads */
+    .dl-zip { margin-bottom: 40px; display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 26px 30px; border-radius: 20px; border: 1px solid var(--line-strong); background: var(--bg-2); }
+    .dl-zip b { display: block; font: 800 italic 1.4rem/1.2 var(--font-display); }
+    .dl-zip small { color: var(--muted); }
+    .flyers { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .piece { display: flex; flex-direction: column; border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; background: var(--bg-2); }
+    .piece__img { position: relative; background: #0b1220; overflow: hidden; }
+    .piece__img img { width: 100%; height: auto; transition: transform 1s var(--ease); }
+    .piece:hover .piece__img img { transform: scale(1.03); }
+    .piece__body { padding: 20px 22px 22px; display: flex; flex-direction: column; gap: 6px; flex: 1; }
+    .piece__body h3 { font-size: 1.1rem; font-weight: 700; }
+    .piece__body p { font-size: .88rem; color: var(--muted); }
+    .piece__dl { margin-top: auto; padding-top: 14px; display: flex; gap: 8px; flex-wrap: wrap; }
+    .card-piece { margin-top: 20px; display: grid; grid-template-columns: 1.4fr 1fr; }
+    .card-piece .piece__img { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; padding: 24px; background: #0b1220; }
+    .card-piece .piece__img img { border-radius: 8px; box-shadow: 0 16px 30px -16px rgba(0,0,0,.8); }
+    .card-piece .piece__body { justify-content: center; padding: 28px; }
+
+    /* brand kit */
+    .swatches { display: grid; grid-template-columns: repeat(5, 1fr); gap: 14px; }
+    .sw { border: 1px solid var(--line); border-radius: 14px; overflow: hidden; }
+    .sw i { display: block; height: 96px; }
+    .sw div { padding: 12px 14px; }
+    .sw b { display: block; font-size: .92rem; }
+    .sw code { font: 500 .78rem/1.4 var(--font-mono); color: var(--muted); }
+    .kit2 { margin-top: 20px; display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+    .kit-box { padding: 26px; border: 1px solid var(--line); border-radius: var(--radius); }
+    .kit-box h3 { font-size: 1.1rem; font-weight: 700; }
+    .type-row { margin-top: 18px; display: flex; align-items: baseline; justify-content: space-between; gap: 16px; padding-bottom: 14px; border-bottom: 1px solid var(--line); }
+    .type-row:last-child { border-bottom: 0; padding-bottom: 0; }
+    .type-row .sample-d { font: 800 italic 1.8rem/1 var(--font-display); }
+    .type-row .sample-b { font: 500 1.3rem/1 var(--font-body); }
+    .type-row small { color: var(--muted); font-size: .82rem; text-align: right; }
+    .logo-tiles { margin-top: 18px; display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .logo-tile { display: grid; place-items: center; height: 120px; border-radius: 12px; background: #03060c; padding: 14px; }
+    .logo-tile--light { background: #fff; border: 1px solid var(--line); }
+    .logo-tile img { max-height: 84px; width: auto; }
+    .kit-links { margin-top: 16px; display: flex; gap: 8px; flex-wrap: wrap; }
+
+    /* dns + how */
+    .dns { width: 100%; border-collapse: collapse; font-size: .92rem; }
+    .dns th { text-align: left; font: 600 .72rem/1 var(--font-body); letter-spacing: .14em; text-transform: uppercase; color: var(--muted); padding: 0 14px 12px; border-bottom: 1px solid var(--line-strong); }
+    .dns td { padding: 13px 14px; border-bottom: 1px solid var(--line); font-family: var(--font-mono); font-size: .86rem; }
+    .dns td:first-child { color: var(--blue-2); font-weight: 600; }
+    .table-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: var(--radius); padding: 20px 6px 6px; background: var(--bg-2); }
+    .two { display: grid; grid-template-columns: .9fr 1.1fr; gap: 50px; align-items: start; }
+    .note { margin-top: 18px; padding: 16px 18px; border-left: 2px solid var(--blue-2); background: rgba(43,140,255,.06); border-radius: 0 10px 10px 0; color: var(--muted); font-size: .92rem; }
+    .note b { color: var(--text); }
+
+    .stack { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .stack__item { padding: 26px; border: 1px solid var(--line); border-radius: var(--radius); }
+    .stack__item small { font: 600 .7rem/1 var(--font-body); letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
+    .stack__item h3 { margin-top: 12px; font-size: 1.2rem; font-weight: 700; }
+    .stack__item p { margin-top: 8px; font-size: .92rem; color: var(--muted); }
+    .highlights { margin-top: 20px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+    .hl { padding: 20px; border-radius: 14px; background: var(--bg-2); }
+    .hl b { display: block; font-size: .98rem; }
+    .hl span { display: block; margin-top: 6px; font-size: .85rem; color: var(--muted); }
+
+    /* checklist */
+    .check-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+    .check-col h3 { font-size: 1.2rem; font-weight: 700; display: flex; align-items: center; gap: 10px; }
+    .check-col h3 span { font: 600 .74rem/1 var(--font-body); padding: 5px 9px; border-radius: 999px; border: 1px solid var(--line-strong); color: var(--muted); }
+    .clist { margin-top: 18px; display: grid; gap: 10px; }
+    .clist label { display: grid; grid-template-columns: 24px 1fr; gap: 14px; align-items: start; padding: 14px 16px; border: 1px solid var(--line); border-radius: 12px; cursor: pointer; transition: border-color .25s, background .25s; }
+    .clist label:hover { border-color: var(--line-strong); }
+    .clist input { appearance: none; -webkit-appearance: none; width: 22px; height: 22px; margin: 0; border-radius: 6px; border: 1.5px solid var(--line-strong); position: relative; cursor: pointer; }
+    .clist input:checked { background: var(--blue); border-color: var(--blue); }
+    .clist input:checked::after { content: ""; position: absolute; left: 6px; top: 2px; width: 6px; height: 11px; border: solid #fff; border-width: 0 2px 2px 0; transform: rotate(45deg); }
+    .clist input:disabled { cursor: default; }
+    .clist b { display: block; font-weight: 600; font-size: .95rem; }
+    .clist small { display: block; margin-top: 3px; color: var(--muted); font-size: .86rem; }
+    .clist label:has(input:checked:not(:disabled)) b { text-decoration: line-through; color: var(--muted); }
+    .clist--done label { cursor: default; }
+
+    .d-footer { padding: 40px 0; border-top: 1px solid var(--line); color: var(--dim); font-size: .86rem; }
+    .d-footer .container { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+
+    @media (max-width: 1000px) {
+      .deliv, .flyers, .stack { grid-template-columns: 1fr 1fr; }
+      .swatches { grid-template-columns: repeat(3, 1fr); }
+      .highlights { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 860px) {
+      .d-hero__grid, .cred, .two, .check-grid, .kit2, .card-piece { grid-template-columns: 1fr; }
+      .dl-zip { flex-direction: column; align-items: flex-start; }
+    }
+    @media (max-width: 600px) {
+      .nav__tag { display: none; }
+      .deliv, .flyers, .stack, .highlights { grid-template-columns: 1fr; }
+      .swatches { grid-template-columns: 1fr 1fr; }
+      .card-piece .piece__img { grid-template-columns: 1fr; }
+      .cred__card { padding: 22px; }
+      .cred__status { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="scroll-progress" aria-hidden="true"><span></span></div>
+
+  <header class="nav is-scrolled" id="nav">
+    <div class="container nav__inner">
+      <a href="../" class="brand" aria-label="JF Network Solutions LLC — sitio web">
+        <img src="../assets/img/logo-mark.svg" alt="" width="82" height="42" class="brand__mark">
+        <span class="brand__text"><span class="brand__name">NETWORK</span><span class="brand__sub">SOLUTIONS LLC</span></span>
+      </a>
+      <span class="nav__tag">Entrega técnica</span>
+      <div class="nav__actions">
+        <a href="#descargas" class="btn btn--ghost btn--sm">Descargas</a>
+        <a href="../" class="btn btn--primary btn--sm">Ver el sitio</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="d-hero">
+      <div class="container d-hero__grid">
+        <div>
+          <p class="eyebrow reveal">Entrega técnica</p>
+          <h1 class="reveal" data-delay="1">Tu marca y tu sitio, <span class="soft">listos para trabajar.</span></h1>
+          <p class="lead reveal" data-delay="2"><strong>JF Network Solutions LLC</strong> ya tiene su sitio web bilingüe en <strong>jfnetworksolutions.com</strong>, su correo corporativo, su perfil en Google, su logo en vector, 3 flyers y su tarjeta de presentación. Aquí tienes todo en un solo lugar: qué se hizo, cómo entrar y qué descargar.</p>
+          <p class="d-ref reveal" data-delay="3">REF · JFN-2026-11 · <span id="today"></span></p>
+        </div>
+        <div class="progress reveal" data-delay="2" id="progress">
+          <div class="progress__top"><strong>Entrega completada</strong><span>100%</span></div>
+          <div class="progress__bar"><i></i></div>
+          <small>13 de 13 entregables listos</small>
+          <ul>
+            <li>Sitio web</li><li>Dominio</li><li>Correo</li><li>Google Business</li><li>Logo</li><li>Formulario</li><li>SEO</li><li>Redes</li><li>Flyers</li><li>Tarjeta</li><li>Kit de marca</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EMAIL ============ -->
+    <section class="section section--light" id="correo">
+      <div class="container cred">
+        <div>
+          <p class="eyebrow reveal">Correo corporativo</p>
+          <h2 class="section__title reveal" data-delay="1">Tu correo con <span class="blue-text">tu dominio.</span></h2>
+          <p class="section__lead reveal" data-delay="2">Ya está creado y conectado al sitio: aparece en la sección de contacto, en el pie de página y como opción en el formulario de cotización.</p>
+          <ul class="tips">
+            <li class="reveal" data-delay="2"><span class="check"></span><span><b>Cambia la contraseña</b> la primera vez que entres y guárdala en un lugar seguro.</span></li>
+            <li class="reveal" data-delay="3"><span class="check"></span><span><b>Activa la verificación en dos pasos</b> si tu proveedor de correo lo ofrece.</span></li>
+            <li class="reveal" data-delay="3"><span class="check"></span><span><b>Configúralo en tu celular</b> para responder cotizaciones al momento.</span></li>
+            <li class="reveal" data-delay="4"><span class="check"></span><span><b>Nunca compartas la contraseña</b> por WhatsApp, mensaje de texto ni redes.</span></li>
+          </ul>
+        </div>
+
+        <div class="cred__card reveal reveal--right" data-delay="1">
+          <div class="cred__head">
+            <span class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span>
+            <span><b>Credenciales de correo</b><small>Cuenta principal del negocio</small></span>
+            <span class="cred__status">Creado</span>
+          </div>
+          <div class="cred__row">
+            <label>Usuario / correo</label>
+            <div class="cred__field"><code id="emailUser">info@jfnetworksolutions.com</code><button class="copy" type="button" data-copy="info@jfnetworksolutions.com">Copiar</button></div>
+          </div>
+          <div class="cred__row">
+            <label>Contraseña</label>
+            <div class="cred__field cred__field--note">
+              <svg viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>
+              <p>La contraseña te la enviará <b>tu gestor de DGP Global Group</b> por un canal privado. Por seguridad no se publica en esta página.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============ GOOGLE BUSINESS ============ -->
+    <section class="section" id="google">
+      <div class="container two">
+        <div>
+          <p class="eyebrow reveal">Google Business Profile</p>
+          <h2 class="section__title reveal" data-delay="1">Tu negocio ya está en Google. <span class="blue-text">Solo falta verificarlo.</span></h2>
+          <p class="section__lead reveal" data-delay="2">Creamos el perfil de <b>JF Network Solutions LLC</b> con tus servicios, teléfono, sitio web y descripción. Google pide que el dueño confirme el negocio con un video corto. Te toma unos 10 minutos.</p>
+          <div class="gbp-status reveal" data-delay="3"><span class="dot-wait"></span>Pendiente: verificación por video</div>
+          <div class="hero__ctas reveal" data-delay="3">
+            <a href="https://business.google.com/" target="_blank" rel="noopener" class="btn btn--primary btn--lg">Abrir Google Business
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+            <a href="https://support.google.com/business/answer/7107242?hl=es" target="_blank" rel="noopener" class="btn btn--ghost btn--lg">Guía oficial de Google</a>
+          </div>
+        </div>
+        <ol class="gsteps">
+          <li class="reveal reveal--right"><span class="gsteps__n">1</span><div><b>Inicia sesión</b><p>Entra a <a href="https://business.google.com/" target="_blank" rel="noopener">business.google.com</a> con tu correo <b>info@jfnetworksolutions.com</b> y la contraseña que te envió tu gestor.</p></div></li>
+          <li class="reveal reveal--right" data-delay="1"><span class="gsteps__n">2</span><div><b>Toca «Verificar»</b><p>Abre el perfil <b>JF Network Solutions LLC</b>, toca <b>Verificar negocio</b> y elige la opción <b>Video</b>.</p></div></li>
+          <li class="reveal reveal--right" data-delay="2"><span class="gsteps__n">3</span><div><b>Graba un solo video de 1 a 2 minutos</b><p>Sin cortes ni ediciones, con el celular. Muestra en este orden:</p>
+            <ul class="gsteps__list">
+              <li><b>Dónde estás:</b> el letrero de la calle o un negocio vecino.</li>
+              <li><b>Tu negocio:</b> tu vehículo de trabajo, herramientas, cable, equipos o algo con el logo JF.</li>
+              <li><b>Que eres el dueño:</b> abre tu vehículo o bodega con tu llave, o muestra una factura o documento del negocio.</li>
+            </ul></div></li>
+          <li class="reveal reveal--right" data-delay="3"><span class="gsteps__n">4</span><div><b>Súbelo y espera</b><p>Sube el video desde el mismo enlace. Google lo revisa y te avisa por correo, normalmente en unos días hábiles.</p></div></li>
+          <li class="reveal reveal--right" data-delay="4"><span class="gsteps__n">?</span><div><b>¿Te trabaste?</b><p>Escríbele a tu gestor de DGP Global Group y te ayudamos paso a paso.</p></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ DELIVERABLES ============ -->
+    <section class="section section--light section--light-2" id="entregables">
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow reveal">Lo que te entregamos</p>
+          <h2 class="section__title reveal" data-delay="1">13 entregables, <span class="blue-text">todos listos.</span></h2>
+          <p class="section__lead reveal" data-delay="2">Cada pieza está terminada, revisada en computadora y en celular, y publicada o lista para descargar.</p>
+        </div>
+        <div class="deliv">
+          <article class="deliv__item reveal reveal--scale"><span class="done"></span><span class="deliv__num">01</span><h3>Sitio web premium</h3><p>Landing page con portada animada, servicios, proceso, data center, sectores y contacto.</p></article>
+          <article class="deliv__item reveal reveal--scale" data-delay="1"><span class="done"></span><span class="deliv__num">02</span><h3>Español / English</h3><p>Todo el sitio en dos idiomas con un botón ES | EN que recuerda la preferencia del visitante.</p></article>
+          <article class="deliv__item reveal reveal--scale" data-delay="2"><span class="done"></span><span class="deliv__num">03</span><h3>Dominio propio</h3><p>jfnetworksolutions.com conectado al sitio, con conexión segura (HTTPS) al activarse.</p></article>
+          <article class="deliv__item reveal reveal--scale"><span class="done"></span><span class="deliv__num">04</span><h3>Correo corporativo</h3><p>info@jfnetworksolutions.com creado y enlazado en el sitio y en todos los impresos.</p></article>
+          <article class="deliv__item reveal reveal--scale" data-delay="1"><span class="done"></span><span class="deliv__num">05</span><h3>Logo vectorizado</h3><p>Monograma JF en SVG que se ve nítido en cualquier tamaño, más ícono para navegador y celular.</p></article>
+          <article class="deliv__item reveal reveal--scale" data-delay="2"><span class="done"></span><span class="deliv__num">06</span><h3>Formulario de cotización</h3><p>Valida los datos y envía la solicitud completa por WhatsApp o por correo, a elección del cliente.</p></article>
+          <article class="deliv__item reveal reveal--scale"><span class="done"></span><span class="deliv__num">07</span><h3>WhatsApp y llamadas</h3><p>+1 (786) 858‑1161 en todo el sitio y botón flotante de WhatsApp siempre visible.</p></article>
+          <article class="deliv__item reveal reveal--scale" data-delay="1"><span class="done"></span><span class="deliv__num">08</span><h3>SEO y Google</h3><p>Títulos, descripciones y datos estructurados de negocio local para que Google entienda tus servicios.</p></article>
+          <article class="deliv__item reveal reveal--scale" data-delay="2"><span class="done"></span><span class="deliv__num">09</span><h3>Vista previa en redes</h3><p>Al compartir el enlace en WhatsApp, Facebook, LinkedIn o X aparece tu logo con título y descripción.</p></article>
+          <article class="deliv__item reveal reveal--scale"><span class="done"></span><span class="deliv__num">10</span><h3>3 flyers</h3><p>Servicios, Fibra y Data Center, CCTV y Wi‑Fi. Tamaño carta, en PDF para imprenta y PNG para redes.</p></article>
+          <article class="deliv__item reveal reveal--scale" data-delay="1"><span class="done"></span><span class="deliv__num">11</span><h3>Tarjeta de presentación</h3><p>Frente y reverso a 3.5 × 2 in, con código QR que lleva directo a tu sitio web.</p></article>
+          <article class="deliv__item reveal reveal--scale" data-delay="2"><span class="done"></span><span class="deliv__num">12</span><h3>Kit de marca</h3><p>Colores, tipografías y logos para que todo lo que publiques se vea igual de profesional.</p></article>
+          <article class="deliv__item deliv__item--wide reveal reveal--scale"><span class="done"></span><span class="deliv__num">13</span><h3>Perfil de Google Business</h3><p>Tu negocio creado en Google con servicios, teléfono, sitio web y descripción. Solo falta que completes la verificación por video (te explicamos abajo cómo).</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ DOWNLOADS ============ -->
+    <section class="section" id="descargas">
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow reveal">Descargas</p>
+          <h2 class="section__title reveal" data-delay="1">Flyers y tarjeta, <span class="blue-text">listos para imprimir.</span></h2>
+          <p class="section__lead reveal" data-delay="2">PDF para la imprenta y PNG en alta resolución (300 dpi) para imprimir en casa o publicar en redes y WhatsApp.</p>
+        </div>
+
+        <div class="dl-zip reveal">
+          <div><b>Kit completo</b><small>3 flyers, tarjeta, logos e imagen para redes en un solo archivo .zip (≈13 MB)</small></div>
+          <a href="descargas/jf-network-kit-completo.zip" download class="btn btn--primary btn--lg">
+            Descargar todo
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v12M6 10l6 6 6-6M5 20h14"/></svg>
+          </a>
+        </div>
+
+        <div class="flyers">
+          <article class="piece reveal reveal--scale">
+            <div class="piece__img"><img src="descargas/preview/flyer-1-servicios.webp" alt="Flyer 1: Servicios de JF Network Solutions" loading="lazy" width="800" height="1035"></div>
+            <div class="piece__body">
+              <h3>Flyer 1 · Servicios</h3>
+              <p>Los 8 servicios con íconos, foto de data center y código QR.</p>
+              <div class="piece__dl"><a class="btn btn--primary btn--sm" href="descargas/flyer-1-servicios.pdf" download>PDF</a><a class="btn btn--ghost btn--sm" href="descargas/flyer-1-servicios.png" download>PNG</a></div>
+            </div>
+          </article>
+          <article class="piece reveal reveal--scale" data-delay="1">
+            <div class="piece__img"><img src="descargas/preview/flyer-2-fibra-datacenter.webp" alt="Flyer 2: Fibra óptica y data center" loading="lazy" width="800" height="1035"></div>
+            <div class="piece__body">
+              <h3>Flyer 2 · Fibra y Data Center</h3>
+              <p>Foto de equipo en data center y lista de lo que incluye cada instalación.</p>
+              <div class="piece__dl"><a class="btn btn--primary btn--sm" href="descargas/flyer-2-fibra-datacenter.pdf" download>PDF</a><a class="btn btn--ghost btn--sm" href="descargas/flyer-2-fibra-datacenter.png" download>PNG</a></div>
+            </div>
+          </article>
+          <article class="piece reveal reveal--scale" data-delay="2">
+            <div class="piece__img"><img src="descargas/preview/flyer-3-cctv-wifi.webp" alt="Flyer 3: Cámaras de seguridad y Wi‑Fi" loading="lazy" width="800" height="1035"></div>
+            <div class="piece__body">
+              <h3>Flyer 3 · CCTV y Wi‑Fi</h3>
+              <p>Cámaras de seguridad y Wi‑Fi empresarial con 4 beneficios clave.</p>
+              <div class="piece__dl"><a class="btn btn--primary btn--sm" href="descargas/flyer-3-cctv-wifi.pdf" download>PDF</a><a class="btn btn--ghost btn--sm" href="descargas/flyer-3-cctv-wifi.png" download>PNG</a></div>
+            </div>
+          </article>
+        </div>
+
+        <article class="piece card-piece reveal">
+          <div class="piece__img">
+            <img src="descargas/preview/tarjeta-frente.webp" alt="Tarjeta de presentación, frente" loading="lazy" width="800" height="457">
+            <img src="descargas/preview/tarjeta-reverso.webp" alt="Tarjeta de presentación, reverso" loading="lazy" width="800" height="457">
+          </div>
+          <div class="piece__body">
+            <h3>Tarjeta de presentación</h3>
+            <p>Tamaño estándar 3.5 × 2 in. Frente con el logo y reverso con teléfono, WhatsApp, correo, sitio web y código QR.</p>
+            <div class="piece__dl">
+              <a class="btn btn--primary btn--sm" href="descargas/tarjeta-presentacion.pdf" download>PDF (frente + reverso)</a>
+              <a class="btn btn--ghost btn--sm" href="descargas/tarjeta-frente.png" download>PNG frente</a>
+              <a class="btn btn--ghost btn--sm" href="descargas/tarjeta-reverso.png" download>PNG reverso</a>
+            </div>
+          </div>
+        </article>
+        <p class="note reveal"><b>Para la imprenta:</b> pide impresión a todo color sobre papel de 14 pt o más para la tarjeta y de 100 lb para los flyers. Si la imprenta te pide sangrado (bleed), avísanos y te enviamos la versión con margen extra.</p>
+      </div>
+    </section>
+
+    <!-- ============ BRAND KIT ============ -->
+    <section class="section section--light" id="marca">
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow reveal">Kit de marca</p>
+          <h2 class="section__title reveal" data-delay="1">Tus colores, letras <span class="blue-text">y logos.</span></h2>
+          <p class="section__lead reveal" data-delay="2">Úsalos en redes, uniformes, vehículos y presentaciones para que tu marca se vea siempre igual.</p>
+        </div>
+        <div class="swatches">
+          <div class="sw reveal reveal--scale"><i style="background:#03060c;box-shadow:inset 0 0 0 1px rgba(255,255,255,.08)"></i><div><b>Negro red</b><code>#03060C</code></div></div>
+          <div class="sw reveal reveal--scale" data-delay="1"><i style="background:#0a74f0"></i><div><b>Azul JF</b><code>#0A74F0</code></div></div>
+          <div class="sw reveal reveal--scale" data-delay="2"><i style="background:#2b8cff"></i><div><b>Azul claro</b><code>#2B8CFF</code></div></div>
+          <div class="sw reveal reveal--scale" data-delay="3"><i style="background:#2bb0ff"></i><div><b>Cyan fibra</b><code>#2BB0FF</code></div></div>
+          <div class="sw reveal reveal--scale" data-delay="4"><i style="background:linear-gradient(180deg,#fff 0%,#dfe4ea 38%,#8b95a3 52%,#eef1f5 64%,#aab3bf 100%)"></i><div><b>Plata cromada</b><code>#DFE4EA → #8B95A3</code></div></div>
+        </div>
+        <div class="kit2">
+          <div class="kit-box reveal">
+            <h3>Tipografías</h3>
+            <div class="type-row"><span class="sample-d">Exo 2</span><small>Títulos · ExtraBold Italic<br>Google Fonts (gratis)</small></div>
+            <div class="type-row"><span class="sample-b">Inter</span><small>Textos · Regular a SemiBold<br>Google Fonts (gratis)</small></div>
+          </div>
+          <div class="kit-box reveal" data-delay="1">
+            <h3>Logos</h3>
+            <div class="logo-tiles">
+              <div class="logo-tile"><img src="../assets/img/logo-mark.svg" alt="Logo JF en vector sobre fondo oscuro"></div>
+              <div class="logo-tile logo-tile--light"><img src="../assets/img/favicon.svg" alt="Ícono JF"></div>
+            </div>
+            <div class="kit-links">
+              <a class="btn btn--ghost btn--sm" href="../assets/img/logo-mark.svg" download="jf-logo-vector.svg">Logo SVG</a>
+              <a class="btn btn--ghost btn--sm" href="../assets/img/logo-original.jpeg" download="jf-logo-original.jpg">Logo original JPG</a>
+              <a class="btn btn--ghost btn--sm" href="../assets/img/favicon.svg" download="jf-icono.svg">Ícono SVG</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ DOMAIN / DNS ============ -->
+    <section class="section" id="dominio">
+      <div class="container two">
+        <div>
+          <p class="eyebrow reveal">Dominio</p>
+          <h2 class="section__title reveal" data-delay="1">jfnetworksolutions.com, <span class="blue-text">conectado.</span></h2>
+          <p class="section__lead reveal" data-delay="2">El dominio está en GoDaddy y apunta al sitio con estos registros. Guárdalos como referencia; no hace falta tocarlos.</p>
+          <p class="note reveal" data-delay="3"><b>No borres</b> los registros MX ni los TXT de correo: son los que hacen funcionar <b>info@jfnetworksolutions.com</b>.</p>
+        </div>
+        <div class="table-wrap reveal reveal--right" data-delay="1">
+          <table class="dns">
+            <thead><tr><th>Tipo</th><th>Nombre</th><th>Valor</th></tr></thead>
+            <tbody>
+              <tr><td>A</td><td>@</td><td>185.199.108.153</td></tr>
+              <tr><td>A</td><td>@</td><td>185.199.109.153</td></tr>
+              <tr><td>A</td><td>@</td><td>185.199.110.153</td></tr>
+              <tr><td>A</td><td>@</td><td>185.199.111.153</td></tr>
+              <tr><td>AAAA</td><td>@</td><td>2606:50c0:8000::153</td></tr>
+              <tr><td>AAAA</td><td>@</td><td>2606:50c0:8001::153</td></tr>
+              <tr><td>AAAA</td><td>@</td><td>2606:50c0:8002::153</td></tr>
+              <tr><td>AAAA</td><td>@</td><td>2606:50c0:8003::153</td></tr>
+              <tr><td>CNAME</td><td>www</td><td>quasarworksco.github.io</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ HOW IT'S BUILT ============ -->
+    <section class="section section--light section--light-2" id="como">
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow reveal">Cómo está hecho</p>
+          <h2 class="section__title reveal" data-delay="1">Rápido, seguro <span class="blue-text">y sin mensualidades.</span></h2>
+          <p class="section__lead reveal" data-delay="2">Tu sitio está hecho a medida, sin plantillas ni programas de terceros que cobren cada mes.</p>
+        </div>
+        <div class="stack">
+          <div class="stack__item reveal reveal--scale"><small>Lo que ven tus clientes</small><h3>Sitio web</h3><p>Código propio, publicado en GitHub Pages: carga rápido y no se cae por visitas.</p></div>
+          <div class="stack__item reveal reveal--scale" data-delay="1"><small>Tu dirección</small><h3>Dominio</h3><p>jfnetworksolutions.com en GoDaddy, a nombre de tu negocio. Recuerda renovarlo cada año.</p></div>
+          <div class="stack__item reveal reveal--scale" data-delay="2"><small>Tu comunicación</small><h3>Correo</h3><p>info@jfnetworksolutions.com para cotizaciones, proveedores y clientes.</p></div>
+        </div>
+        <div class="highlights">
+          <div class="hl reveal"><b>Conexión segura</b><span>HTTPS con candado en el navegador.</span></div>
+          <div class="hl reveal" data-delay="1"><b>Funciona en celular</b><span>Diseñado primero para pantallas pequeñas.</span></div>
+          <div class="hl reveal" data-delay="2"><b>Imágenes optimizadas</b><span>Fotos en WebP para cargar rápido.</span></div>
+          <div class="hl reveal" data-delay="3"><b>Accesible</b><span>Respeta a quien prefiere menos movimiento.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CHECKLIST ============ -->
+    <section class="section" id="checklist">
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow reveal">Checklist</p>
+          <h2 class="section__title reveal" data-delay="1">Lo que hicimos <span class="blue-text">y lo que sigue.</span></h2>
+          <p class="section__lead reveal" data-delay="2">Marca los pasos pendientes a medida que los completes; tu avance se guarda en este navegador.</p>
+        </div>
+        <div class="check-grid">
+          <div class="check-col reveal reveal--left">
+            <h3>Entregado <span>13 / 13</span></h3>
+            <div class="clist clist--done">
+              <label><input type="checkbox" checked disabled><span><b>Sitio web bilingüe publicado</b><small>Español e inglés, con animaciones y diseño para celular.</small></span></label>
+              <label><input type="checkbox" checked disabled><span><b>Correo corporativo creado</b><small>info@jfnetworksolutions.com</small></span></label>
+              <label><input type="checkbox" checked disabled><span><b>Perfil de Google Business creado</b><small>Con servicios, teléfono, sitio web y descripción.</small></span></label>
+              <label><input type="checkbox" checked disabled><span><b>Dominio conectado</b><small>Registros DNS configurados en GoDaddy.</small></span></label>
+              <label><input type="checkbox" checked disabled><span><b>Logo vectorizado e íconos</b><small>SVG, favicon e ícono para celular.</small></span></label>
+              <label><input type="checkbox" checked disabled><span><b>Formulario, WhatsApp y llamadas</b><small>Cotizaciones directo a tu WhatsApp o correo.</small></span></label>
+              <label><input type="checkbox" checked disabled><span><b>SEO y vista previa en redes</b><small>Google, WhatsApp, Facebook, LinkedIn y X.</small></span></label>
+              <label><input type="checkbox" checked disabled><span><b>3 flyers y tarjeta de presentación</b><small>PDF para imprenta y PNG para redes.</small></span></label>
+            </div>
+          </div>
+          <div class="check-col reveal reveal--right">
+            <h3>Tus siguientes pasos <span id="pendingCount">0 / 5</span></h3>
+            <div class="clist" id="todo">
+              <label><input type="checkbox" data-key="pwd"><span><b>Entra a tu correo y cambia la contraseña</b><small>Usa la que te envíe tu gestor de DGP Global Group.</small></span></label>
+              <label><input type="checkbox" data-key="https"><span><b>Confirma el candado HTTPS</b><small>Abre jfnetworksolutions.com y verifica que aparezca el candado.</small></span></label>
+              <label><input type="checkbox" data-key="gbp"><span><b>Verifica tu negocio en Google con el video</b><small>Sigue los 4 pasos de la sección Google Business. Luego sube fotos de tus trabajos.</small></span></label>
+              <label><input type="checkbox" data-key="print"><span><b>Imprime tus tarjetas y flyers</b><small>Lleva los PDF a la imprenta.</small></span></label>
+              <label><input type="checkbox" data-key="photos"><span><b>Envíanos fotos reales de tus trabajos</b><small>Las ponemos en el sitio en lugar de las de stock.</small></span></label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="d-footer">
+    <div class="container">
+      <span>© <span id="year"></span> JF Network Solutions LLC · Documento de entrega</span>
+      <span class="credit">Diseñado por <a href="https://dgpglobalgroup.com" target="_blank" rel="noopener">DGP Global Group</a></span>
+    </div>
+  </footer>
+
+  <script>
+  (() => {
+    const $$ = (s) => [...document.querySelectorAll(s)];
+    const reduced = matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const now = new Date();
+    document.getElementById("year").textContent = now.getFullYear();
+    document.getElementById("today").textContent = now.toLocaleDateString("es-US", { day: "numeric", month: "long", year: "numeric" });
+
+    /* reveal on scroll */
+    const io = new IntersectionObserver((es) => es.forEach((e) => {
+      if (e.isIntersecting) { e.target.classList.add("is-in"); io.unobserve(e.target); }
+    }), { threshold: 0.12, rootMargin: "0px 0px -6% 0px" });
+    $$(".reveal").forEach((el) => io.observe(el));
+
+    /* scroll progress + light-section wipe */
+    const bar = document.querySelector(".scroll-progress span");
+    const lights = $$(".section--light");
+    if (!reduced) document.documentElement.classList.add("js-clip");
+    let tick = false;
+    function onScroll() {
+      const max = document.documentElement.scrollHeight - innerHeight;
+      bar.style.transform = `scaleX(${max > 0 ? scrollY / max : 0})`;
+      if (!reduced) lights.forEach((s) => {
+        const r = s.getBoundingClientRect();
+        if (r.top > innerHeight || r.bottom < 0) return;
+        const p = Math.min(1, Math.max(0, (innerHeight - r.top) / (innerHeight * 0.75)));
+        s.style.setProperty("--ci", `${((1 - p) * 5).toFixed(2)}%`);
+        s.style.setProperty("--cr", `${((1 - p) * 40).toFixed(1)}px`);
+      });
+      tick = false;
+    }
+    addEventListener("scroll", () => { if (!tick) { tick = true; requestAnimationFrame(onScroll); } }, { passive: true });
+    onScroll();
+
+    /* copy buttons */
+    $$("[data-copy]").forEach((b) => b.addEventListener("click", async () => {
+      try { await navigator.clipboard.writeText(b.dataset.copy); }
+      catch (_) {
+        const t = document.createElement("textarea"); t.value = b.dataset.copy; document.body.appendChild(t); t.select();
+        try { document.execCommand("copy"); } catch (_) {} t.remove();
+      }
+      b.textContent = "Copiado"; b.classList.add("is-done");
+      setTimeout(() => { b.textContent = "Copiar"; b.classList.remove("is-done"); }, 1800);
+    }));
+
+    /* client checklist (saved per browser) */
+    const boxes = $$("#todo input");
+    const count = document.getElementById("pendingCount");
+    let saved = {};
+    try { saved = JSON.parse(localStorage.getItem("jf-entrega-todo") || "{}"); } catch (_) {}
+    const update = () => { count.textContent = `${boxes.filter((b) => b.checked).length} / ${boxes.length}`; };
+    boxes.forEach((b) => {
+      b.checked = !!saved[b.dataset.key];
+      b.addEventListener("change", () => {
+        saved[b.dataset.key] = b.checked;
+        try { localStorage.setItem("jf-entrega-todo", JSON.stringify(saved)); } catch (_) {}
+        update();
+      });
+    });
+    update();
+  })();
+  </script>
+</body>
+</html>

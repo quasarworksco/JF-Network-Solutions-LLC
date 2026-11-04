@@ -13,3 +13,9 @@ Language can be forced with `?lang=en` or `?lang=es`.
 ## Photos
 
 `assets/img/photos/` contains stock photos from [Unsplash](https://unsplash.com) (Unsplash License — free for commercial use, no attribution required). Replace them with real JF project photos whenever available, keeping the same file names.
+
+## Delivery page and print kit
+
+- `/entrega/` — client handoff page (not indexed): deliverables, email account, Google Business verification guide, downloads, brand kit, DNS and checklist.
+- `marketing/` — sources for the 3 flyers and the business card. Regenerate with:
+  `python3 marketing/build.py && node marketing/render.js` (outputs to `entrega/descargas/`).
