@@ -122,6 +122,8 @@
   const fill = $(".timeline__fill");
   const steps = $$(".step");
   const bandImg = $(".brandband__img");
+  const lightSecs = $$(".section--light");
+  if (!reduced) document.documentElement.classList.add("js-clip");
   let ticking = false;
 
   function onScroll() {
@@ -139,6 +141,15 @@
       steps.forEach((s) => {
         const sr = s.getBoundingClientRect();
         s.classList.toggle("is-lit", sr.top + 32 < start);
+      });
+    }
+    if (!reduced) {
+      lightSecs.forEach((sec) => {
+        const r = sec.getBoundingClientRect();
+        if (r.top > innerHeight || r.bottom < 0) return;
+        const p = Math.min(1, Math.max(0, (innerHeight - r.top) / (innerHeight * 0.75)));
+        sec.style.setProperty("--ci", `${((1 - p) * 5).toFixed(2)}%`);
+        sec.style.setProperty("--cr", `${((1 - p) * 40).toFixed(1)}px`);
       });
     }
     if (bandImg && !reduced) {
