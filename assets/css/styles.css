@@ -580,6 +580,9 @@ svg.fill { fill: currentColor; }
 .footer li a { transition: color .25s; }
 .footer li a:hover { color: #fff; }
 .footer__bottom { margin-top: 60px; padding-top: 24px; border-top: 1px solid var(--line); display: flex; justify-content: space-between; align-items: center; gap: 20px; color: var(--dim); font-size: .84rem; }
+.footer__bottom .credit { margin-left: auto; }
+.credit a { color: var(--muted); font-weight: 600; transition: color .25s; }
+.credit a:hover { color: #fff; }
 .totop { width: 42px; height: 42px; display: grid; place-items: center; border-radius: 50%; border: 1px solid var(--line-strong); transition: border-color .3s, transform .4s var(--ease); }
 .totop svg { width: 18px; height: 18px; }
 .totop:hover { border-color: var(--text); transform: translateY(-4px); }
@@ -665,6 +668,7 @@ svg.fill { fill: currentColor; }
   .timeline__rail { left: 25px; }
   .footer__grid { grid-template-columns: 1fr; }
   .footer__bottom { flex-direction: column-reverse; align-items: flex-start; }
+  .footer__bottom .credit { margin-left: 0; }
   .seg span { padding: 10px 4px; font-size: .82rem; }
 }
 

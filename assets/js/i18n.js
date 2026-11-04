@@ -86,7 +86,8 @@ window.I18N = {
 
     "ft.about": "Infraestructura de red profesional: fibra óptica, cableado estructurado, data center, CCTV y Wi‑Fi.",
     "ft.services": "Servicios", "ft.company": "Empresa", "ft.contact": "Contacto",
-    "ft.rights": "Todos los derechos reservados."
+    "ft.rights": "Todos los derechos reservados.",
+    "ft.credit": "Diseñado por"
   },
 
   en: {
@@ -175,6 +176,7 @@ window.I18N = {
 
     "ft.about": "Professional network infrastructure: fiber optics, structured cabling, data center, CCTV and Wi‑Fi.",
     "ft.services": "Services", "ft.company": "Company", "ft.contact": "Contact",
-    "ft.rights": "All rights reserved."
+    "ft.rights": "All rights reserved.",
+    "ft.credit": "Designed by"
   }
 };
