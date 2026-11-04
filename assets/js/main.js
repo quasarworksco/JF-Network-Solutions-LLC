@@ -7,7 +7,7 @@
      ------------------------------------------------------------------ */
   const CONFIG = {
     phone: "17868581161",      // WhatsApp / calls (digits only, with country code)
-    email: ""                  // e.g. "info@jfnetworksolutions.com" — leave empty until ready
+    email: "info@jfnetworksolutions.com"
   };
 
   const $ = (s, c = document) => c.querySelector(s);

@@ -1,0 +1,119 @@
+/* JF Network Solutions — print pieces (flyers + business card) */
+:root {
+  --bg: #03060c; --bg-2: #070c17; --line: rgba(140,170,220,.16);
+  --blue: #0a74f0; --blue-2: #2b8cff; --blue-ink: #0a64d6; --wa: #25d366;
+  --text: #e9eef6; --muted: #8d9ab0; --ink: #0b1220; --ink-muted: #566275;
+  --chrome: linear-gradient(180deg, #ffffff 0%, #dfe4ea 38%, #8b95a3 52%, #eef1f5 64%, #aab3bf 100%);
+  --display: "Exo 2", sans-serif; --body: "Inter", sans-serif; --mono: "JetBrains Mono", monospace;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { background: #555; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+body { font-family: var(--body); color: var(--text); }
+img, svg { display: block; }
+.ic { width: 1em; height: 1em; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+.ic--fill { fill: currentColor; stroke: none; }
+
+/* ---------- page ---------- */
+.page { position: relative; overflow: hidden; background: var(--bg); }
+.page--letter { width: 8.5in; height: 11in; }
+.page--card { width: 3.5in; height: 2in; }
+.page + .page { break-before: page; }
+@media print { html, body { background: none; } }
+
+/* ---------- brand lockup ---------- */
+.lockup { display: flex; align-items: center; gap: 6px; }
+.lockup img { height: 54px; width: auto; }
+.lockup__text { display: flex; flex-direction: column; line-height: 1; transform: skewX(-8deg); }
+.lockup__name { font: 900 italic 26px/1 var(--display); letter-spacing: .02em; background: var(--chrome); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.lockup__sub { font: 700 10.5px/1.5 var(--display); letter-spacing: .34em; color: var(--blue-2); }
+.lockup--ink .lockup__name { background: none; color: var(--ink); }
+.lockup--ink .lockup__sub { color: var(--blue-ink); }
+
+.eyebrow { display: inline-flex; align-items: center; gap: 12px; font: 600 11px/1 var(--body); letter-spacing: .18em; text-transform: uppercase; color: var(--muted); }
+.eyebrow::before { content: ""; width: 30px; height: 1px; background: var(--blue-2); }
+.h1 { font: 800 italic 60px/1.02 var(--display); letter-spacing: -.02em; color: #fff; }
+.h1 .soft { color: var(--muted); }
+.h1 .blue { color: var(--blue-2); }
+.lead { font-size: 15.5px; line-height: 1.6; color: var(--muted); }
+
+/* ---------- contact bar ---------- */
+.contact { position: absolute; left: 0; right: 0; bottom: 0; display: grid; grid-template-columns: 1fr auto; gap: 28px; align-items: center; padding: 30px 56px 34px; border-top: 1px solid var(--line); background: var(--bg-2); }
+.contact__cta { font: 800 italic 25px/1.1 var(--display); color: #fff; }
+.contact__list { margin-top: 14px; display: grid; grid-template-columns: auto auto; gap: 10px 30px; font-size: 14.5px; font-weight: 500; color: var(--text); }
+.contact__list span { display: flex; align-items: center; gap: 9px; white-space: nowrap; }
+.contact__list .ic { font-size: 17px; color: var(--blue-2); }
+.contact__list .wa .ic { color: var(--wa); }
+.qr { width: 112px; padding: 9px; border-radius: 12px; background: #fff; }
+.qr img { width: 100%; height: auto; }
+.qr small { display: block; margin-top: 6px; text-align: center; font: 600 8.5px/1 var(--body); letter-spacing: .12em; text-transform: uppercase; color: var(--ink); }
+
+/* ---------- flyer 1: services (dark) ---------- */
+.f1 .top { padding: 50px 56px 0; display: flex; justify-content: space-between; align-items: center; }
+.f1 .top .tag { font: 500 12px/1 var(--mono); color: var(--muted); letter-spacing: .08em; }
+.f1 .hero { padding: 40px 56px 0; }
+.f1 .hero .h1 { margin-top: 18px; }
+.f1 .hero .lead { margin-top: 16px; max-width: 560px; }
+.f1 .photo { margin: 28px 56px 0; height: 190px; border-radius: 18px; overflow: hidden; border: 1px solid var(--line); }
+.f1 .photo img { width: 100%; height: 100%; object-fit: cover; }
+.svc-grid { margin: 26px 56px 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+.svc { padding: 16px 14px; border: 1px solid var(--line); border-radius: 14px; }
+.svc .ic { font-size: 24px; color: var(--blue-2); }
+.svc b { display: block; margin-top: 12px; font: 700 14px/1.2 var(--display); color: #fff; }
+.svc small { display: block; margin-top: 4px; font-size: 10.5px; line-height: 1.4; color: var(--muted); }
+
+/* ---------- flyer 2: fiber & data center (light) ---------- */
+.f2 { background: #fff; color: var(--ink); }
+.f2 .photo { position: relative; height: 470px; }
+.f2 .photo > img { width: 100%; height: 100%; object-fit: cover; }
+.f2 .photo::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(3,6,12,.55) 0%, rgba(3,6,12,0) 40%); }
+.f2 .photo .lockup { position: absolute; z-index: 1; top: 44px; left: 56px; }
+.f2 .badge { position: absolute; z-index: 1; right: 56px; bottom: -26px; padding: 16px 20px; border-radius: 14px; background: var(--bg); color: #fff; border: 1px solid var(--line); }
+.f2 .badge .mono { font: 500 11px/1 var(--mono); color: var(--muted); letter-spacing: .08em; }
+.f2 .badge b { display: block; margin-top: 6px; font: 800 italic 24px/1 var(--display); }
+.f2 .badge small { display: block; margin-top: 4px; font-size: 11px; color: var(--muted); }
+.f2 .body { padding: 46px 56px 0; display: grid; grid-template-columns: 1.05fr 1fr; gap: 36px; }
+.f2 .eyebrow { color: var(--ink-muted); }
+.f2 .eyebrow::before { background: var(--blue-ink); }
+.f2 .h1 { margin-top: 16px; font-size: 44px; color: var(--ink); }
+.f2 .h1 .blue { color: var(--blue-ink); }
+.f2 .lead { margin-top: 14px; color: var(--ink-muted); font-size: 14.5px; }
+.checks { display: grid; gap: 13px; padding-top: 30px; }
+.checks li { list-style: none; display: grid; grid-template-columns: 26px 1fr; gap: 12px; align-items: start; font-size: 14px; line-height: 1.4; color: var(--ink); }
+.checks i { width: 26px; height: 26px; border-radius: 50%; border: 1px solid rgba(11,18,32,.2); position: relative; }
+.checks i::after { content: ""; position: absolute; left: 9px; top: 6px; width: 5px; height: 10px; border: solid var(--blue-ink); border-width: 0 2px 2px 0; transform: rotate(45deg); }
+.checks small { display: block; color: var(--ink-muted); font-size: 12px; margin-top: 2px; }
+
+/* ---------- flyer 3: CCTV & Wi-Fi (dark split) ---------- */
+.f3 .top { padding: 50px 56px 0; }
+.f3 .hero { padding: 34px 56px 0; }
+.f3 .hero .h1 { margin-top: 18px; font-size: 50px; }
+.f3 .pics { margin: 30px 56px 0; display: grid; grid-template-columns: 1.2fr 1fr; gap: 14px; height: 300px; }
+.f3 .pic { position: relative; border-radius: 18px; overflow: hidden; border: 1px solid var(--line); }
+.f3 .pic img { width: 100%; height: 100%; object-fit: cover; }
+.f3 .pic span { position: absolute; left: 14px; bottom: 14px; padding: 7px 12px; border-radius: 999px; background: rgba(3,6,12,.85); font: 600 11px/1 var(--body); letter-spacing: .08em; text-transform: uppercase; color: #fff; }
+.feats { margin: 26px 56px 0; display: grid; grid-template-columns: 1fr 1fr; gap: 14px 30px; }
+.feat { display: grid; grid-template-columns: 40px 1fr; gap: 14px; align-items: start; }
+.feat .box { width: 40px; height: 40px; border-radius: 11px; border: 1px solid var(--line); display: grid; place-items: center; color: var(--blue-2); font-size: 20px; }
+.feat b { display: block; font: 700 15px/1.25 var(--display); color: #fff; }
+.feat small { display: block; margin-top: 3px; font-size: 12px; line-height: 1.45; color: var(--muted); }
+
+/* ---------- business card ---------- */
+.card-front { display: grid; place-items: center; }
+.card-front .mark { width: 1.9in; }
+.card-front .word { margin-top: -6px; text-align: center; transform: skewX(-9deg); }
+.card-front .word b { display: block; font: 900 italic 20px/1 var(--display); letter-spacing: .02em; background: var(--chrome); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.card-front .word span { display: inline-flex; align-items: center; gap: 8px; margin-top: 4px; font: 700 7px/1 var(--display); letter-spacing: .4em; color: var(--blue-2); }
+.card-front .word span::before, .card-front .word span::after { content: ""; width: 16px; height: 1px; background: var(--blue-2); }
+.card-front .rule { position: absolute; left: 0; right: 0; bottom: 0; height: 4px; background: var(--blue); }
+.card-front .tag { position: absolute; left: 0; right: 0; bottom: 13px; text-align: center; font: 500 6.2px/1 var(--mono); letter-spacing: .12em; color: var(--muted); }
+.card-back { background: #fff; color: var(--ink); padding: .2in .24in; display: grid; grid-template-columns: 1fr auto; gap: .16in; align-items: center; }
+.card-back .lockup img { height: 26px; }
+.card-back .lockup__name { font-size: 12.5px; }
+.card-back .lockup__sub { font-size: 5.2px; }
+.card-back ul { margin-top: .14in; display: grid; gap: 5.5px; list-style: none; }
+.card-back li { display: flex; align-items: center; gap: 7px; font-size: 8.6px; font-weight: 500; white-space: nowrap; }
+.card-back li .ic { font-size: 10px; color: var(--blue-ink); }
+.card-back li.wa .ic { color: #128c4a; }
+.card-back .qr { align-self: center; width: .86in; padding: 0; background: none; }
+.card-back .qr small { font-size: 5.4px; margin-top: 4px; }
+.card-back .rule { position: absolute; left: 0; top: 0; bottom: 0; width: 4px; background: var(--blue); }
