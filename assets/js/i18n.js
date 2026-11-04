@@ -6,7 +6,7 @@ window.I18N = {
     "skip": "Saltar al contenido",
     "nav.services": "Servicios", "nav.process": "Proceso", "nav.datacenter": "Data Center", "nav.industries": "Sectores", "nav.contact": "Contacto", "nav.quote": "Cotizar",
 
-    "hero.eyebrow": "Infraestructura de red · Miami & Sur de Florida",
+    "hero.eyebrow": "Infraestructura de red · Fibra · Data Center",
     "hero.title1": "Conectamos tu negocio",
     "hero.title2": "a la velocidad de la luz.",
     "hero.lead": "Fibra óptica, cableado estructurado, data centers, cámaras de seguridad y Wi‑Fi empresarial. Instalaciones limpias, certificadas y documentadas — de principio a fin.",
@@ -85,7 +85,7 @@ window.I18N = {
     "msg.subject": "Solicitud de cotización — ",
 
     "ft.about": "Infraestructura de red profesional: fibra óptica, cableado estructurado, data center, CCTV y Wi‑Fi.",
-    "ft.services": "Servicios", "ft.company": "Empresa", "ft.contact": "Contacto", "ft.area": "Miami · Sur de Florida",
+    "ft.services": "Servicios", "ft.company": "Empresa", "ft.contact": "Contacto",
     "ft.rights": "Todos los derechos reservados."
   },
 
@@ -95,7 +95,7 @@ window.I18N = {
     "skip": "Skip to content",
     "nav.services": "Services", "nav.process": "Process", "nav.datacenter": "Data Center", "nav.industries": "Industries", "nav.contact": "Contact", "nav.quote": "Get a quote",
 
-    "hero.eyebrow": "Network infrastructure · Miami & South Florida",
+    "hero.eyebrow": "Network infrastructure · Fiber · Data Center",
     "hero.title1": "We connect your business",
     "hero.title2": "at the speed of light.",
     "hero.lead": "Fiber optics, structured cabling, data centers, security cameras and enterprise Wi‑Fi. Clean, certified and fully documented installs — from start to finish.",
@@ -174,7 +174,7 @@ window.I18N = {
     "msg.subject": "Quote request — ",
 
     "ft.about": "Professional network infrastructure: fiber optics, structured cabling, data center, CCTV and Wi‑Fi.",
-    "ft.services": "Services", "ft.company": "Company", "ft.contact": "Contact", "ft.area": "Miami · South Florida",
+    "ft.services": "Services", "ft.company": "Company", "ft.contact": "Contact",
     "ft.rights": "All rights reserved."
   }
 };
