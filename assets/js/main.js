@@ -265,24 +265,22 @@
           const d = Math.hypot(a.x - b.x, a.y - b.y);
           if (d < LINK) {
             const o = 1 - d / LINK;
-            ctx.strokeStyle = `rgba(43,140,255,${o * 0.28})`;
+            ctx.strokeStyle = `rgba(140,170,220,${o * 0.14})`;
             ctx.lineWidth = 1;
             ctx.beginPath(); ctx.moveTo(a.x, a.y); ctx.lineTo(b.x, b.y); ctx.stroke();
-            if (pulses.length < 26 && Math.random() < 0.0009) pulses.push({ a, b, t: 0, s: 0.008 + Math.random() * 0.014 });
+            if (pulses.length < 12 && Math.random() < 0.0009) pulses.push({ a, b, t: 0, s: 0.008 + Math.random() * 0.014 });
           }
         }
       }
       for (const n of nodes) {
-        ctx.fillStyle = "rgba(159,224,255,.75)";
+        ctx.fillStyle = "rgba(170,190,220,.45)";
         ctx.beginPath(); ctx.arc(n.x, n.y, n.r, 0, Math.PI * 2); ctx.fill();
       }
       pulses = pulses.filter((p) => {
         p.t += p.s;
         if (p.t >= 1) return false;
         const x = p.a.x + (p.b.x - p.a.x) * p.t, y = p.a.y + (p.b.y - p.a.y) * p.t;
-        const g = ctx.createRadialGradient(x, y, 0, x, y, 10);
-        g.addColorStop(0, "rgba(220,245,255,1)"); g.addColorStop(0.3, "rgba(43,176,255,.8)"); g.addColorStop(1, "rgba(43,176,255,0)");
-        ctx.fillStyle = g; ctx.beginPath(); ctx.arc(x, y, 10, 0, Math.PI * 2); ctx.fill();
+        ctx.fillStyle = "#2b8cff"; ctx.beginPath(); ctx.arc(x, y, 1.8, 0, Math.PI * 2); ctx.fill();
         return true;
       });
       requestAnimationFrame(frame);
