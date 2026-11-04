@@ -1,1 +1,11 @@
-# JF-Network-Solutions-LLC
+# JF Network Solutions LLC — Landing page
+
+Static bilingual (ES/EN) site, served by GitHub Pages at `jfnetworksolutions.dgp-link.com` (see `CNAME`).
+
+- `index.html` — page markup (Spanish by default)
+- `assets/js/i18n.js` — all Spanish/English text
+- `assets/js/main.js` — animations, language switch, contact form. **Set `CONFIG.email` at the top to enable email.**
+- `assets/css/styles.css` — design tokens (brand colors) at the top
+- `assets/img/logo-mark.svg` — vector JF mark; `favicon.svg`; `logo-original.jpeg` is the source logo
+
+Language can be forced with `?lang=en` or `?lang=es`.
