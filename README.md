@@ -9,3 +9,7 @@ Static bilingual (ES/EN) site, served by GitHub Pages at `jfnetworksolutions.dgp
 - `assets/img/logo-mark.svg` — vector JF mark; `favicon.svg`; `logo-original.jpeg` is the source logo
 
 Language can be forced with `?lang=en` or `?lang=es`.
+
+## Photos
+
+`assets/img/photos/` contains stock photos from [Unsplash](https://unsplash.com) (Unsplash License — free for commercial use, no attribution required). Replace them with real JF project photos whenever available, keeping the same file names.
