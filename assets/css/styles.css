@@ -110,15 +110,13 @@ svg.fill { fill: currentColor; }
 
 /* ---------- eyebrow ---------- */
 .eyebrow {
-  display: inline-flex; align-items: center; gap: 10px;
-  padding: 7px 14px 7px 12px;
-  border: 1px solid var(--line);
-  border-radius: 999px;
+  display: inline-flex; align-items: center; gap: 12px;
   font: 600 .74rem/1 var(--font-body);
-  letter-spacing: .14em; text-transform: uppercase;
+  letter-spacing: .16em; text-transform: uppercase;
   color: var(--muted);
 }
-.dot { width: 6px; height: 6px; border-radius: 50%; background: var(--blue-2); }
+.eyebrow::before { content: ""; width: 28px; height: 1px; background: var(--blue-2); }
+.eyebrow .dot { display: none; }
 @keyframes ping { 0% { box-shadow: 0 0 0 0 rgba(43,176,255,.7);} 80%,100% { box-shadow: 0 0 0 10px rgba(43,176,255,0);} }
 
 /* ==========================================================================
@@ -313,6 +311,7 @@ svg.fill { fill: currentColor; }
 .section--alt { background: var(--bg-2); border-block: 1px solid var(--line); }
 .section__head { max-width: 760px; margin-bottom: 56px; }
 .section__head--center { margin-inline: auto; text-align: center; }
+.section__head--center .eyebrow::after { content: ""; width: 28px; height: 1px; background: var(--blue-2); }
 .section__title { margin-top: 18px; font-weight: 800; font-size: clamp(2rem, 4.2vw, 3.3rem); }
 .section__lead { margin-top: 18px; font-size: 1.08rem; color: var(--muted); max-width: 620px; }
 .section__head--center .section__lead { margin-inline: auto; }
