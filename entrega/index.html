@@ -172,7 +172,8 @@
     .hl span { display: block; margin-top: 6px; font-size: .85rem; color: var(--muted); }
 
     /* checklist */
-    .check-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+    .check-grid { display: block; }
+    .check-grid .clist { grid-template-columns: 1fr 1fr; }
     .check-col h3 { font-size: 1.2rem; font-weight: 700; display: flex; align-items: center; gap: 10px; }
     .check-col h3 span { font: 600 .74rem/1 var(--font-body); padding: 5px 9px; border-radius: 999px; border: 1px solid var(--line-strong); color: var(--muted); }
     .clist { margin-top: 18px; display: grid; gap: 10px; }
@@ -196,7 +197,7 @@
       .highlights { grid-template-columns: 1fr 1fr; }
     }
     @media (max-width: 860px) {
-      .d-hero__grid, .cred, .two, .check-grid, .kit2, .card-piece { grid-template-columns: 1fr; }
+      .d-hero__grid, .cred, .two, .kit2, .card-piece, .check-grid .clist { grid-template-columns: 1fr; }
       .dl-zip { flex-direction: column; align-items: flex-start; }
     }
     @media (max-width: 600px) {
@@ -233,7 +234,7 @@
         <div>
           <p class="eyebrow reveal">Entrega técnica</p>
           <h1 class="reveal" data-delay="1">Tu marca y tu sitio, <span class="soft">listos para trabajar.</span></h1>
-          <p class="lead reveal" data-delay="2"><strong>JF Network Solutions LLC</strong> ya tiene su sitio web bilingüe en <strong>jfnetworksolutions.com</strong>, su correo corporativo, su perfil en Google, su logo en vector, 3 flyers y su tarjeta de presentación. Aquí tienes todo en un solo lugar: qué se hizo, cómo entrar y qué descargar.</p>
+          <p class="lead reveal" data-delay="2"><strong>JF Network Solutions LLC</strong> ya tiene su sitio web bilingüe en <strong>jfnetworksolutions.com</strong>, su correo corporativo, su perfil en Google, su logo en vector, 3 flyers y su tarjeta de presentación. Aquí tienes todo lo que recibiste, en un solo lugar.</p>
           <p class="d-ref reveal" data-delay="3">REF · JFN-2026-11 · <span id="today"></span></p>
         </div>
         <div class="progress reveal" data-delay="2" id="progress">
@@ -254,12 +255,7 @@
           <p class="eyebrow reveal">Correo corporativo</p>
           <h2 class="section__title reveal" data-delay="1">Tu correo con <span class="blue-text">tu dominio.</span></h2>
           <p class="section__lead reveal" data-delay="2">Ya está creado y conectado al sitio: aparece en la sección de contacto, en el pie de página y como opción en el formulario de cotización.</p>
-          <ul class="tips">
-            <li class="reveal" data-delay="2"><span class="check"></span><span><b>Cambia la contraseña</b> la primera vez que entres y guárdala en un lugar seguro.</span></li>
-            <li class="reveal" data-delay="3"><span class="check"></span><span><b>Activa la verificación en dos pasos</b> si tu proveedor de correo lo ofrece.</span></li>
-            <li class="reveal" data-delay="3"><span class="check"></span><span><b>Configúralo en tu celular</b> para responder cotizaciones al momento.</span></li>
-            <li class="reveal" data-delay="4"><span class="check"></span><span><b>Nunca compartas la contraseña</b> por WhatsApp, mensaje de texto ni redes.</span></li>
-          </ul>
+
         </div>
 
         <div class="cred__card reveal reveal--right" data-delay="1">
@@ -324,7 +320,7 @@
         <div class="deliv">
           <article class="deliv__item reveal reveal--scale"><span class="done"></span><span class="deliv__num">01</span><h3>Sitio web premium</h3><p>Landing page con portada animada, servicios, proceso, data center, sectores y contacto.</p></article>
           <article class="deliv__item reveal reveal--scale" data-delay="1"><span class="done"></span><span class="deliv__num">02</span><h3>Español / English</h3><p>Todo el sitio en dos idiomas con un botón ES | EN que recuerda la preferencia del visitante.</p></article>
-          <article class="deliv__item reveal reveal--scale" data-delay="2"><span class="done"></span><span class="deliv__num">03</span><h3>Dominio propio</h3><p>jfnetworksolutions.com conectado al sitio, con conexión segura (HTTPS) al activarse.</p></article>
+          <article class="deliv__item reveal reveal--scale" data-delay="2"><span class="done"></span><span class="deliv__num">03</span><h3>Dominio propio</h3><p>jfnetworksolutions.com conectado a tu sitio web.</p></article>
           <article class="deliv__item reveal reveal--scale"><span class="done"></span><span class="deliv__num">04</span><h3>Correo corporativo</h3><p>info@jfnetworksolutions.com creado y enlazado en el sitio y en todos los impresos.</p></article>
           <article class="deliv__item reveal reveal--scale" data-delay="1"><span class="done"></span><span class="deliv__num">05</span><h3>Logo vectorizado</h3><p>Monograma JF en SVG que se ve nítido en cualquier tamaño, más ícono para navegador y celular.</p></article>
           <article class="deliv__item reveal reveal--scale" data-delay="2"><span class="done"></span><span class="deliv__num">06</span><h3>Formulario de cotización</h3><p>Valida los datos y envía la solicitud completa por WhatsApp o por correo, a elección del cliente.</p></article>
@@ -398,7 +394,6 @@
             </div>
           </div>
         </article>
-        <p class="note reveal"><b>Para la imprenta:</b> pide impresión a todo color sobre papel de 14 pt o más para la tarjeta y de 100 lb para los flyers. Si la imprenta te pide sangrado (bleed), avísanos y te enviamos la versión con margen extra.</p>
       </div>
     </section>
 
@@ -439,36 +434,9 @@
       </div>
     </section>
 
-    <!-- ============ DOMAIN / DNS ============ -->
-    <section class="section" id="dominio">
-      <div class="container two">
-        <div>
-          <p class="eyebrow reveal">Dominio</p>
-          <h2 class="section__title reveal" data-delay="1">jfnetworksolutions.com, <span class="blue-text">conectado.</span></h2>
-          <p class="section__lead reveal" data-delay="2">El dominio está en GoDaddy y apunta al sitio con estos registros. Guárdalos como referencia; no hace falta tocarlos.</p>
-          <p class="note reveal" data-delay="3"><b>No borres</b> los registros MX ni los TXT de correo: son los que hacen funcionar <b>info@jfnetworksolutions.com</b>.</p>
-        </div>
-        <div class="table-wrap reveal reveal--right" data-delay="1">
-          <table class="dns">
-            <thead><tr><th>Tipo</th><th>Nombre</th><th>Valor</th></tr></thead>
-            <tbody>
-              <tr><td>A</td><td>@</td><td>185.199.108.153</td></tr>
-              <tr><td>A</td><td>@</td><td>185.199.109.153</td></tr>
-              <tr><td>A</td><td>@</td><td>185.199.110.153</td></tr>
-              <tr><td>A</td><td>@</td><td>185.199.111.153</td></tr>
-              <tr><td>AAAA</td><td>@</td><td>2606:50c0:8000::153</td></tr>
-              <tr><td>AAAA</td><td>@</td><td>2606:50c0:8001::153</td></tr>
-              <tr><td>AAAA</td><td>@</td><td>2606:50c0:8002::153</td></tr>
-              <tr><td>AAAA</td><td>@</td><td>2606:50c0:8003::153</td></tr>
-              <tr><td>CNAME</td><td>www</td><td>quasarworksco.github.io</td></tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </section>
 
     <!-- ============ HOW IT'S BUILT ============ -->
-    <section class="section section--light section--light-2" id="como">
+    <section class="section" id="como">
       <div class="container">
         <div class="section__head">
           <p class="eyebrow reveal">Cómo está hecho</p>
@@ -477,11 +445,11 @@
         </div>
         <div class="stack">
           <div class="stack__item reveal reveal--scale"><small>Lo que ven tus clientes</small><h3>Sitio web</h3><p>Código propio, publicado en GitHub Pages: carga rápido y no se cae por visitas.</p></div>
-          <div class="stack__item reveal reveal--scale" data-delay="1"><small>Tu dirección</small><h3>Dominio</h3><p>jfnetworksolutions.com en GoDaddy, a nombre de tu negocio. Recuerda renovarlo cada año.</p></div>
+          <div class="stack__item reveal reveal--scale" data-delay="1"><small>Tu dirección</small><h3>Dominio</h3><p>jfnetworksolutions.com, a nombre de tu negocio.</p></div>
           <div class="stack__item reveal reveal--scale" data-delay="2"><small>Tu comunicación</small><h3>Correo</h3><p>info@jfnetworksolutions.com para cotizaciones, proveedores y clientes.</p></div>
         </div>
         <div class="highlights">
-          <div class="hl reveal"><b>Conexión segura</b><span>HTTPS con candado en el navegador.</span></div>
+          <div class="hl reveal"><b>Conexión segura</b><span>Tu sitio viaja cifrado de punta a punta.</span></div>
           <div class="hl reveal" data-delay="1"><b>Funciona en celular</b><span>Diseñado primero para pantallas pequeñas.</span></div>
           <div class="hl reveal" data-delay="2"><b>Imágenes optimizadas</b><span>Fotos en WebP para cargar rápido.</span></div>
           <div class="hl reveal" data-delay="3"><b>Accesible</b><span>Respeta a quien prefiere menos movimiento.</span></div>
@@ -490,35 +458,25 @@
     </section>
 
     <!-- ============ CHECKLIST ============ -->
-    <section class="section" id="checklist">
+    <section class="section section--light section--light-2" id="checklist">
       <div class="container">
         <div class="section__head">
-          <p class="eyebrow reveal">Checklist</p>
-          <h2 class="section__title reveal" data-delay="1">Lo que hicimos <span class="blue-text">y lo que sigue.</span></h2>
-          <p class="section__lead reveal" data-delay="2">Marca los pasos pendientes a medida que los completes; tu avance se guarda en este navegador.</p>
+          <p class="eyebrow reveal">Resumen</p>
+          <h2 class="section__title reveal" data-delay="1">Todo lo que <span class="blue-text">recibiste.</span></h2>
         </div>
         <div class="check-grid">
-          <div class="check-col reveal reveal--left">
+          <div class="check-col reveal">
             <h3>Entregado <span>13 / 13</span></h3>
             <div class="clist clist--done">
               <label><input type="checkbox" checked disabled><span><b>Sitio web bilingüe publicado</b><small>Español e inglés, con animaciones y diseño para celular.</small></span></label>
               <label><input type="checkbox" checked disabled><span><b>Correo corporativo creado</b><small>info@jfnetworksolutions.com</small></span></label>
               <label><input type="checkbox" checked disabled><span><b>Perfil de Google Business creado</b><small>Con servicios, teléfono, sitio web y descripción.</small></span></label>
-              <label><input type="checkbox" checked disabled><span><b>Dominio conectado</b><small>Registros DNS configurados en GoDaddy.</small></span></label>
+              <label><input type="checkbox" checked disabled><span><b>Dominio conectado</b><small>jfnetworksolutions.com apuntando a tu sitio.</small></span></label>
               <label><input type="checkbox" checked disabled><span><b>Logo vectorizado e íconos</b><small>SVG, favicon e ícono para celular.</small></span></label>
               <label><input type="checkbox" checked disabled><span><b>Formulario, WhatsApp y llamadas</b><small>Cotizaciones directo a tu WhatsApp o correo.</small></span></label>
               <label><input type="checkbox" checked disabled><span><b>SEO y vista previa en redes</b><small>Google, WhatsApp, Facebook, LinkedIn y X.</small></span></label>
               <label><input type="checkbox" checked disabled><span><b>3 flyers y tarjeta de presentación</b><small>PDF para imprenta y PNG para redes.</small></span></label>
-            </div>
-          </div>
-          <div class="check-col reveal reveal--right">
-            <h3>Tus siguientes pasos <span id="pendingCount">0 / 5</span></h3>
-            <div class="clist" id="todo">
-              <label><input type="checkbox" data-key="pwd"><span><b>Entra a tu correo y cambia la contraseña</b><small>Usa la que te envíe tu gestor de DGP Global Group.</small></span></label>
-              <label><input type="checkbox" data-key="https"><span><b>Confirma el candado HTTPS</b><small>Abre jfnetworksolutions.com y verifica que aparezca el candado.</small></span></label>
-              <label><input type="checkbox" data-key="gbp"><span><b>Verifica tu negocio en Google con el video</b><small>Sigue los 4 pasos de la sección Google Business. Luego sube fotos de tus trabajos.</small></span></label>
-              <label><input type="checkbox" data-key="print"><span><b>Imprime tus tarjetas y flyers</b><small>Lleva los PDF a la imprenta.</small></span></label>
-              <label><input type="checkbox" data-key="photos"><span><b>Envíanos fotos reales de tus trabajos</b><small>Las ponemos en el sitio en lugar de las de stock.</small></span></label>
+              <label><input type="checkbox" checked disabled><span><b>Kit de marca</b><small>Colores, tipografías y logos.</small></span></label>
             </div>
           </div>
         </div>
@@ -577,22 +535,6 @@
       b.textContent = "Copiado"; b.classList.add("is-done");
       setTimeout(() => { b.textContent = "Copiar"; b.classList.remove("is-done"); }, 1800);
     }));
-
-    /* client checklist (saved per browser) */
-    const boxes = $$("#todo input");
-    const count = document.getElementById("pendingCount");
-    let saved = {};
-    try { saved = JSON.parse(localStorage.getItem("jf-entrega-todo") || "{}"); } catch (_) {}
-    const update = () => { count.textContent = `${boxes.filter((b) => b.checked).length} / ${boxes.length}`; };
-    boxes.forEach((b) => {
-      b.checked = !!saved[b.dataset.key];
-      b.addEventListener("change", () => {
-        saved[b.dataset.key] = b.checked;
-        try { localStorage.setItem("jf-entrega-todo", JSON.stringify(saved)); } catch (_) {}
-        update();
-      });
-    });
-    update();
   })();
   </script>
 </body>
